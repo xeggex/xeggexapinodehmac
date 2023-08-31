@@ -257,7 +257,7 @@ xeggexApi.prototype.balances = function() {
 
 xeggexApi.prototype.createOrder = function(symbol, side, quantity, price, type = 'limit', userProvidedId = null, strictValidate = false) {
     let url = new URL(baseUrl+'/createorder');
-    let body = {}
+    let body = {
 	  "userProvidedId": userProvidedId,
 	  "symbol": symbol,
 	  "side": side,
