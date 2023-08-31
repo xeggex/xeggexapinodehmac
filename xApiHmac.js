@@ -2,7 +2,7 @@ const fetch = require('node-fetch');
 const readlineSync = require('readline-sync');
 const CryptoJS = require("crypto-js");
 
-const baseUrl = 'https://xeggex.com/api/v2';
+const baseUrl = 'https://api.xeggex.com/api/v2';
 
 var xeggexApi = function(apiKey, apiSecret) {
   this.apiKey = apiKey;
